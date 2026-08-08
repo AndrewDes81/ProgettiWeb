@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Materiali Speciali – TEMA</title>
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link rel="shortcut icon" href="img/favicon.ico">
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center"
+                    href="index.html">
+                    <img src="img/logo-navbar.png" alt="Logo TEMA"
+                        class="logo-navbar">
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link"
+                                href="index.html#servizi">Servizi</a></li>
+                          <li class="nav-item"><a class="nav-link"
+                                href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <header class="py-5 mt-4">
+            <div class="container text-center">
+                <h1 class="fw-bold text-uppercase">Materiali Speciali</h1>
+                <p class="lead">Acciaio inox, corten e ottone per progetti che
+                    richiedono resistenza, estetica e carattere.</p>
+            </div>
+        </header>
+        <section class="py-4 bg-light border-bottom">
+            <div class="container">
+                <div
+                    class="d-flex flex-wrap gap-3 justify-content-center service-menu">
+
+                    <a href="infissi.html" class="service-link">
+                        <i class="bi bi-door-closed me-2"></i> Infissi
+                    </a>
+
+                     <a href="centinatura-profili.html" class="service-link">
+                        <i class="bi bi-bounding-box-circles me-2"></i> Centinatura
+                        Profili
+                    </a>
+
+                    <a href="materiali-speciali.html" class="service-link active-service">
+                        <i class="bi bi-layers-half me-2"></i> Materiali
+                        Speciali
+                    </a>
+
+                    <a href="design-arredo.html" class="service-link">
+                        <i class="bi bi-brush me-2"></i> Design & Arredo
+                    </a>
+
+                    <a href="progettazione-tecnica.html" class="service-link">
+                        <i class="bi bi-gear-wide-connected me-2"></i>
+                        Progettazione Tecnica
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- IMMAGINE HERO -->
+        <div class="container mb-5">
+            <img src="img/Foto_Materiali_Speciali/materiali-speciali-hero.png"
+                class="img-fluid rounded shadow-sm" alt="Materiali speciali">
+        </div>
+
+        <!-- DESCRIZIONE TECNICA -->
+        <section class="py-4">
+            <div class="container">
+                <h2 class="mb-3">Descrizione tecnica</h2>
+                <!-- --------------- Descrizione alternativa e più completa inerente all'imh hero ------------
+                Metalli che definiscono lo spazio.
+                Acciaio inox brunito, corten e ottone ossidato si incontrano in un linguaggio essenziale e contemporaneo, dando vita a superfici dal forte carattere estetico. Materiali autentici, lavorati con precisione artigianale, per trasformare ogni ambiente in uno spazio unico, elegante e senza tempo. -->
+                <p class="lead">
+                    I materiali speciali come acciaio inox, corten e ottone
+                    permettono di realizzare strutture e componenti
+                    che uniscono resistenza, estetica e durabilità. Ideali per
+                    ambienti esterni, progetti di design
+                    contemporaneo e soluzioni che richiedono un forte impatto
+                    visivo.
+                </p>
+            </div>
+        </section>
+
+        <!-- MATERIALI + TAVOLOZZE -->
+        <section class="py-4 bg-light">
+            <div class="container">
+                <h2 class="mb-4">Materiali disponibili</h2>
+
+                <div class="row g-4">
+
+                    <!-- ACCIAIO INOX -->
+                    <div class="col-md-4">
+                        <div
+                            class="p-4 border rounded shadow-sm h-100 material-box position-relative">
+
+                            <!-- Pulsante More/Occhio -->
+                            <button
+                                class="btn btn-light btn-sm position-absolute top-0 end-0 me-2 mt-2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalInox">
+                                <i class="bi bi-eye"></i>
+                            </button>
+
+                            <h5 class="text-uppercase">Acciaio Inox</h5>
+                            <p>Finitura Satinato, Lucido e
+                                Brunito.<br>Resistente alla corrosione, ideale
+                                per ambienti esterni e design moderni.</p>
+
+                            <div class="material-swatches mt-3">
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/acciaio/inox-satinato.webp"
+                                        alt="Inox Satinato"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Satinato</span>
+                                </div>
+
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/acciaio/inox-lucido.webp"
+                                        alt="Inox Lucido"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Lucido</span>
+                                </div>
+
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/acciaio/inox-brunito.webp"
+                                        alt="Inox Brunito"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Brunito</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ACCIAIO CORTEN -->
+                    <div class="col-md-4">
+                        <div
+                            class="p-4 border rounded shadow-sm h-100 material-box position-relative">
+
+                            <!-- Pulsante More/Occhio -->
+                            <button
+                                class="btn btn-light btn-sm position-absolute top-0 end-0 me-2 mt-2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalCorten">
+                                <i class="bi bi-eye"></i>
+                            </button>
+
+                            <h5 class="text-uppercase">Acciaio Corten</h5>
+                            <p>Materiale vivo, con ossidazione controllata che
+                                dona carattere e unicità.</p>
+
+                            <div class="material-swatches mt-3">
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/corten/corten1.jpg"
+                                        alt="Corten Chiaro"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Brunito</span>
+                                </div>
+
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/corten/corten2.webp"
+                                        alt="Corten Medio"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Medio</span>
+                                </div>
+
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/corten/corten3.webp"
+                                        alt="Corten Scuro"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Scuro</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- OTTONE -->
+                    <div class="col-md-4">
+                        <div
+                            class="p-4 border rounded shadow-sm h-100 material-box position-relative">
+
+                            <!-- Pulsante More/Occhio -->
+                            <button
+                                class="btn btn-light btn-sm position-absolute top-0 end-0 me-2 mt-2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalOttone">
+                                <i class="bi bi-eye"></i>
+                            </button>
+
+                            <h5 class="text-uppercase">Ottone</h5>
+                            <p>Finitura Satinato, Lucido e Brunito.<br>Leghe e
+                                finiture particolari per progetti esclusivi e
+                                personalizzati.</p>
+
+                            <div class="material-swatches mt-3">
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/ottone/ottone1.webp"
+                                        alt="Ottone Satinato"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Satinato</span>
+                                </div>
+
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/ottone/ottone2.jpg"
+                                        alt="Ottone Lucido"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Ossidato</span>
+                                </div>
+
+                                <div class="swatch-item text-center">
+                                    <img
+                                        src="img/Foto_Materiali_Speciali/ottone/ottone-brunito-delabre.webp"
+                                        alt="Ottone Brunito"
+                                        onclick="openImgModal(this.src)">
+                                    <span class="swatch-label">Brunito</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VANTAGGI -->
+                <section class="py-5 bg-light">
+                    <div class="container">
+                        <h2 class="mb-4">Perché scegliere TEMA</h2>
+
+                        <ul class="list-group list-group-flush fs-5">
+                            <li class="list-group-item">✔ Materiali
+                                certificati</li>
+                            <li class="list-group-item">✔ Resistenza agli agenti
+                                atmosferici</li>
+                            <li class="list-group-item">✔ Finiture di alto
+                                livello</li>
+                            <li class="list-group-item">✔ Progetti
+                                personalizzati</li>
+                            <li class="list-group-item">✔ Lavorazioni
+                                artigianali</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="cta-final text-center text-white py-5">
+                    <div class="container">
+                        <h2 class="fw-bold">Hai un progetto in mente?</h2>
+                        <p class="lead">Realizziamo lavorazioni in inox, corten
+                            e ottone
+                            su misura.</p>
+                        <a href="contatti.html"
+                            class="btn btn-light btn-lg">Contattaci</a>
+                    </div>
+                </section>
+
+                <!-- FOOTER -->
+                <footer class="bg-dark text-white text-center py-3">
+                    <div class="mb-2">
+                        <a href="https://www.facebook.com/tuapagina"
+                            class="text-white me-3 fs-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tuapagina"
+                            class="text-white fs-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+
+                    <p class="mb-0">© 2026 ADS Design - Sviluppato da Andrea
+                        DeSantis | Tutti i diritti riservati</p>
+                </footer>
+
+                <!-- Bootstrap JS -->
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+                <!-- MODAL IMMAGINE -->
+                <div id="imgModal" class="img-modal" onclick="closeImgModal()">
+                    <img id="imgModalContent">
+                </div>
+
+                <script src="js/main.js"></script>
+                <!-- Modal Acciaio Inox -->
+                <div class="modal fade" id="modalInox" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Tavolozze Acciaio
+                                    Inox</h5>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row g-3">
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_inox/acciaio-brunito2.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Acciaio
+                                            Brunito</p>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_inox/acciaio-brunito3.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Acciaio
+                                            Brunito</p>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_inox/acciaio-brunito4.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Tipi
+                                            Acciaio</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Acciaio Corten -->
+                <div class="modal fade" id="modalCorten" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Tavolozze Acciaio
+                                    Corten</h5>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row g-3">
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_corten/tavolozzaCorten.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Ossidazione
+                                            Leggera</p>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_corten/corten-ossidazione-media.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Ossidazione
+                                            Media</p>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_corten/corten-ossidazione-profonda.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Ossidazione
+                                            Profonda</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Ottone -->
+                <div class="modal fade" id="modalOttone" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Tavolozze Ottone</h5>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row g-3">
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_ottone/ottone-extra-satinato.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Extra
+                                            Satinato</p>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_ottone/ottone-ossidato.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Ossidato</p>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="modal-swatch-box">
+                                            <img
+                                                src="img/Foto_Materiali_Speciali/modal_ottone/ottone-brunito-scuro.webp"
+                                                class="modal-swatch">
+                                        </div>
+                                        <p class="text-center mt-1">Brunito
+                                            Scuro</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </body>
+        </html>
