@@ -22,4 +22,7 @@ Ho sistemato l'header e foter ADMIN e ho trasformato tutto in php.
 tutte le pagine hanno:
     <?php include 'partials/header.php'; ?>
     <?php include 'partials/footer.php'; ?>
+    --------------------------------------------------------------------
+    
+    04/09/2026
 
