@@ -1,0 +1,62 @@
+/* ===========================
+   LOGIN PAGE – TEMA PREMIUM
+   =========================== */
+
+body {
+    background: #f3f3f3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.login-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #222;
+}
+
+.login-input {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-btn {
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    transition: 0.25s ease;
+}
+
+.login-btn:hover {
+    background-color: #444;
+}
+
+.login-error {
+    background: #b33a3a;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}

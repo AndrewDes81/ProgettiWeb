@@ -1,0 +1,676 @@
+/* ===========================
+   PALETTE COLORI
+   =========================== */
+
+:root {
+    --nero: #1A1A1A;
+    --grigio-acciaio: #C7C7C7;
+    --grigio-scuro: #323232;
+    --bianco: #FFFFFF;
+    --corten: #A45A3F;
+    --corten-scuro: #7A3E2A;
+}
+
+/* ===========================
+   GENERALI
+   =========================== */
+
+body {
+    padding-top: 70px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bianco);
+    color: var(--nero);
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+/* ===========================
+   NAVBAR
+   =========================== */
+
+.navbar {
+    background-color: var(--nero) !important;
+}
+
+.navbar-brand {
+    color: var(--bianco) !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--grigio-acciaio) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--corten) !important;
+}
+
+/* LOGO NAVBAR */
+.logo-navbar {
+    height: 52px;
+    width: auto;
+}
+
+/* ===========================
+   CAROSELLO HERO
+   =========================== */
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.15);
+}
+
+.carousel-item img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.carousel-caption h5 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.carousel {
+    margin-bottom: 2rem;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 60vh;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 30vh;
+    }
+}
+
+/* Logo mobile */
+@media (max-width: 576px) {
+    .logo-navbar {
+        height: 32px;
+    }
+}
+
+/* ===========================
+   BOTTONI
+   =========================== */
+
+.btn-primary {
+    background-color: var(--corten);
+    border-color: var(--corten);
+}
+
+.btn-primary:hover {
+    background-color: var(--corten-scuro);
+    border-color: var(--corten-scuro);
+}
+
+.btn-light:hover {
+    background-color: var(--corten);
+    color: var(--bianco);
+}
+
+/* ===========================
+   SERVIZI PREMIUM
+   =========================== */
+
+#servizi {
+    background-color: var(--bianco);
+}
+
+#servizi h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+/* CONTENITORE IN FILA */
+.servizi-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+}
+
+/* ==========================================
+   RESET LINK (DEVE STARE PRIMA DI .service-box)
+   ========================================== */
+
+.servizi-row a.service-box {
+    all: unset; /* reset totale del link */
+    display: block;
+    background: var(--bianco);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 30px;
+    width: 260px;
+    transition: 0.35s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.servizi-row a.service-box * {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* BOX SERVIZI */
+.service-box {
+    background: var(--bianco);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 30px;
+    width: 260px;
+    transition: 0.35s ease;
+    position: relative;
+    display: block;
+}
+
+/* Linea corten elegante sopra */
+.service-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 60px;
+    background-color: var(--corten);
+    border-radius: 0 0 4px 0;
+}
+
+/* Titolo */
+.service-box h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+      color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Testo */
+.service-box p {
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+      color: inherit !important;
+    text-decoration: none !important;
+
+}
+
+/* Hover premium */
+.servizi-row a.service-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    border-color: var(--corten);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .servizi-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-box {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-box {
+        padding: 25px;
+    }
+}
+
+/* ===========================
+   PORTFOLIO
+   =========================== */
+
+#portfolio-section {
+    min-height: 650px;
+}
+
+.portfolio-row {
+    /*gap: 10px;*/
+}
+
+.portfolio-row > .col-md-4 {
+    padding: 6px !important; /* spazio reale tra le card */
+}
+
+.portfolio-item {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--grigio-acciaio);
+    transition: 0.3s;
+    /*margin-bottom: 10px;*/
+}
+
+.portfolio-item:hover {
+    border-color: var(--corten);
+    transform: scale(1.015); /* hover controllato */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 260px; /* puoi aumentare o diminuire */
+    object-fit: cover;
+}
+
+/* ===========================
+   MATERIALI SPECIALI – TAVOLOZZE
+   =========================== */
+
+/* Contenitore dei box materiali */
+.material-box {
+    min-height: 340px; /* uniforma l'altezza dei 3 box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Contenitore delle tavolozze */
+.material-swatches {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto; /* allinea le tavolozze alla stessa altezza */
+    flex-wrap: wrap; /* responsive */
+}
+
+/* Immagini dei campioni */
+.material-swatches img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--grigio-acciaio);
+    transition: 0.35s ease; /* animazione morbida */
+    box-shadow: 0 0 0 rgba(0,0,0,0); /* base */
+}
+
+/* Hover premium */
+.material-swatches img:hover {
+    border-color: var(--corten); /* bordo corten */
+    transform: scale(1.06); /* leggero zoom */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6); /* effetto luce */
+}
+
+.swatch-label {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--nero);
+    text-align: center;
+}
+
+.img-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.img-modal img {
+    width: 80vmin;      /* lato quadrato */
+    height: 80vmin;     /* lato quadrato */
+    object-fit: cover;  /* mantiene proporzioni */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    animation: zoomIn 0.25s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .material-swatches img {
+        width: 75px;
+        height: 75px;
+    }
+}
+ 
+/* ===========================
+   MATERIALI + MODALI
+   =========================== */
+.modal-swatch-box {
+    width: 100%;
+    height: 200px; /* puoi aumentare a 250px se vuoi */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.modal-swatch {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .modal-swatch-box {
+        height: 150px;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    .modal-swatch-box {
+        height: 250px;
+    }
+}
+
+
+
+
+/* ===========================
+   LAVORAZIONI REALIZZATE
+   =========================== */
+
+.lavori-img {
+    width: 100%;
+    height: 260px; /* stessa altezza del portfolio */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+
+/* ===========================
+   CTA FINALE
+   =========================== */
+
+.cta-final {
+    background: var(--nero);
+}
+
+.cta-final h2,
+.cta-final p {
+    color: var(--bianco);
+}
+
+/* ===========================
+   FOOTER TEMA PREMIUM
+   =========================== */   
+.footer-tema {
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    border-top: 1px solid var(--corten);
+}
+
+.footer-tema h5 {
+    color: var(--corten);
+}
+
+.footer-link {
+    color: var(--grigio-acciaio);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--corten);
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.15);
+    margin-top: 20px;
+}
+
+
+/* ===========================
+   MINI MENU SERVIZI – TEMA PREMIUM
+   =========================== */
+
+.service-menu .service-link {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #fff;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.service-menu .service-link:hover {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.service-menu i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Evidenziazione automatica della pagina attiva */
+.service-menu .active-service {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+    cursor: default;
+    pointer-events: none;
+}
+
+.service-menu .active-service i {
+    color: #fff;
+}
+
+/* FORM ELEGANTE SENZA BORDI */
+.form-control {
+    border: none !important;
+    border-bottom: 1px solid var(--grigio-acciaio) !important;
+    border-radius: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-bottom: 2px solid var(--corten) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--nero);
+}
+
+.btn-elegante {
+    background: var(--nero);
+    color: var(--bianco);
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: 0.25s ease;
+}
+
+.btn-elegante:hover {
+    background: var(--corten);
+    color: var(--bianco);
+}
+
+/* ===========================
+   CONTATTI PREMIUM – ICONCINE + TESTO ACCAPO
+   =========================== */
+
+/* Box contatti */
+.contact-box {
+    background: var(--bianco);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.contact-box:hover {
+    border-color: var(--corten);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Icona grande premium */
+.contact-icon {
+    font-size: 2.4rem;
+    color: var(--corten);
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Titolo sotto icona */
+.contact-item h5 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Testo accapo */
+.contact-item p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Social icons */
+.social-icon {
+    font-size: 1.4rem;
+    color: var(--nero);
+    transition: 0.25s ease;
+}
+
+.social-icon:hover {
+    color: var(--corten);
+}
+
+/* ===========================
+   FORM PREMIUM SENZA BORDI
+   =========================== */
+
+.elegant-input {
+    border: none !important;
+    border-bottom: 1px solid var(--grigio-acciaio) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 1rem;
+}
+
+.elegant-input:focus {
+    border-bottom: 2px solid var(--corten) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Pulsante elegante */
+.btn-elegante {
+    background: var(--nero);
+    color: var(--bianco);
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: 0.25s ease;
+}
+
+.btn-elegante:hover {
+    background: var(--corten);
+    color: var(--bianco);
+}
+
+/* Messaggio di successo elegante TEMA */
+.alert-success-tema {
+    background: var(--corten);
+    color: var(--bianco);
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.35s ease;
+}
+
+.alert-success-tema.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===========================
+   HERO PAGINE INTERNE – TEMA
+   =========================== */
+
+.hero-interni {
+    background: var(--grigio-scuro); /* sfondo grigio scuro uniforme */
+    padding: 150px 0 100px;
+   /* margin-top: 5px; /* navbar fixed */
+    text-align: center;
+}
+
+.hero-icon i {
+    font-size: 3rem;
+    color: var(--corten); /* colore brand TEMA */
+}
+
+.hero-interni h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--bianco);
+}
+
+.breadcrumb-text {
+    opacity: 0.7;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    color: var(--grigio-acciaio);
+}
+
+.breadcrumb-home {
+    color: var(--grigio-acciaio) !important;
+    text-decoration: none;
+}
+
