@@ -1,0 +1,12 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Quadrato smussato -->
+  <rect x="4" y="4" width="40" height="40" rx="10" fill="#F5F5F5"/>
+
+  <!-- Curva esterna -->
+  <path d="M14 32 C14 22 22 14 32 14" 
+        stroke="#555" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Curva interna (parallela e centrata) -->
+  <path d="M20 32 C20 25 25 20 32 20" 
+        stroke="#555" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

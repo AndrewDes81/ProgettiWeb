@@ -1,0 +1,21 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Quadrato scuro con bordo chiaro -->
+  <rect x="4" y="4" width="40" height="40" rx="10" fill="#F5F5F5"/>
+
+  <!-- Punto di saldatura -->
+<circle cx="24" cy="24" r="3" fill="#555"/>
+
+<!-- Scintille simmetriche che partono dal centro -->
+<path d="M24 24 L24 8" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+<path d="M24 24 L24 40" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+
+<path d="M24 24 L8 24" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+<path d="M24 24 L40 24" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+
+<path d="M24 24 L12 12" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+<path d="M24 24 L36 36" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+
+<path d="M24 24 L36 12" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+<path d="M24 24 L12 36" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

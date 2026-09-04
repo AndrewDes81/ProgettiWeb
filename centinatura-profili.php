@@ -91,20 +91,66 @@ include 'partials/header.php'; ?>
 
             <div class="row g-4">
                 <div class="col-md-4">
-                    <img src="img/Foto_Centinature_Profili/centinatura1.jpeg"
+                    
+                    <img src="img/Foto_Centinature_Profili/centinatura1.png"
                         class="img-fluid rounded shadow-sm lavori-img" alt="Centinatura profili acciaio">
-                        <title class="d-block mt-2 text-center fw-bold">PROFILI CURVATI</title>
-                        <label class="d-block mt-2 text-center">Cura artigianale e macchinari avanzati
-                            <br>per curvature perfette e costanti.
-                        </label>
-                </div>
+                        
+                        
+                    <div class="work-info-box mt-3">
+
+                        <div class="work-header">
+                            <div class="work-icon">
+                                <img src="img/icona-profilo-curvato.svg" alt="Icona profilo curvato">
+                            </div>
+
+                            <h5 class="work-title">PROFILI CURVATI</h5>
+                        </div>
+
+                        <p class="work-desc">
+                            Cura artigianale e macchinari avanzati per curvature perfette e costanti.
+                        </p>
+                    </div>
+                        
+                </div> 
+                
+
                 <div class="col-md-4">
-                    <img src="img/Foto_Centinature_Profili/centinatura2_1.jpg"
+                    <img src="img/Foto_Centinature_Profili/centinatura2.jpg"
                         class="img-fluid rounded shadow-sm lavori-img" alt="Profilo curvato inox">
+                        <div class="work-info-box mt-3">
+
+                        <div class="work-header">
+                            <div class="work-icon">
+                                <img src="img/icona-arco.svg" alt="Icona arco">
+                            </div>
+
+                            <h5 class="work-title">STRUTTURE SU MISURA</h5>
+                        </div>
+
+                        <p class="work-desc">
+                            Realizzazione di strutture metalliche personalizzate
+                            per ogni esigenza progettuale.
+                        </p>
+                    </div>
                 </div>
+                
                 <div class="col-md-4">
-                    <img src="img/Foto_Centinature_Profili/centinatura3.jpeg"
+                    <img src="img/Foto_Centinature_Profili/centinatura3.jpg"
                         class="img-fluid rounded shadow-sm lavori-img" alt="Curvatura profili tubolari">
+                    <div class="work-info-box mt-3">
+
+                        <div class="work-header">
+                            <div class="work-icon">
+                                <img src="img/icona-saldatura.svg" alt="Icona saldatura">
+                            </div>
+
+                            <h5 class="work-title">SALDATURA CERTIFICATA</h5>
+                        </div>
+
+                        <p class="work-desc">
+                            Saldature precise e certificate per garantire massima resistenza e qualità.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
