@@ -25,4 +25,8 @@ tutte le pagine hanno:
     --------------------------------------------------------------------
     
     04/09/2026
-
+Sistemamato paginacentinature-profili con le descrizioni sotto le foto
+----------------------------------------
+05/09/2026
+pulizia repository, rinominato in tema-website
+--------------------------------------------------
